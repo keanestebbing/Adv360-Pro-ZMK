@@ -32,10 +32,37 @@
             hold-trigger-key-positions = <70>;
         };
 
-        new_behavior: new_behavior {
+        altdown: altdown {
             compatible = "zmk,behavior-mod-morph";
-            label = "NEW_BEHAVIOR";
+            label = "ALTDOWN";
             bindings = <&kp DE_K>, <&kp DOWN_ARROW>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+        altup: altup {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALTUP";
+            bindings = <&kp I>, <&kp UP>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+        altleft: altleft {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALTLEFT";
+            bindings = <&kp I>, <&kp LEFT_ARROW>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+        altright: altright {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALTRIGHT";
+            bindings = <&kp I>, <&kp RIGHT_ARROW>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT|MOD_RALT)>;
