@@ -28,6 +28,18 @@
             quick_tap_ms = <175>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <70 41 42 43 24>;
+        };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BEHAVIOR";
+            bindings = <&gresc>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <70>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -68,11 +80,11 @@
 
         default_layer {
             bindings = <
-&kp DE_ESCAPE_CHARACTER  &kp N1            &kp N2            &kp N3        &kp N4        &kp N5  &tog 1                                                            &mo 3    &kp N6  &kp N7         &kp N8         &kp N9             &kp N0           &kp DE_SHARP_S
-&kp TAB                  &kp Q             &kp W             &kp E         &kp R         &kp T   &none                                                             &none    &kp Y   &kp U          &kp I          &kp O              &kp P            &kp DE_U_UMLAUT
-&kp CAPSLOCK             &kp A             &kp S             &kp D         &kp F         &kp G   &none      &kp BACKSPACE  &kp LEFT_ALT      &kp LGUI   &kp RCTRL  &none    &kp H   &kp J          &kp K          &kp L              &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&kp LSHFT                &kp DE_Y          &kp X             &kp C         &kp V         &kp B                             &kp HOME          &kp PG_UP                      &kp N   &kp M          &kp COMMA      &kp DOT            &kp DE_MINUS     &kp RSHFT
-&mo 2                    &kp DE_LESS_THAN  &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT          &kp SPACE  &kp DEL        &kp END           &kp PG_DN  &kp ENTER  &hm A B          &kp RIGHT_ALT  &kp RIGHT_WIN  &kp RIGHT_CONTROL  &kp DE_PLUS      &kp DE_HASH
+&kp DE_ESCAPE_CHARACTER  &kp N1            &kp N2            &kp N3        &kp N4        &kp N5  &tog 1                                                            &mo 3                     &kp N6  &kp N7         &kp N8         &kp N9             &kp N0           &kp DE_SHARP_S
+&kp TAB                  &kp Q             &kp W             &kp E         &kp R         &kp T   &none                                                             &none                     &kp Y   &kp U          &kp I          &kp O              &kp P            &kp DE_U_UMLAUT
+&kp CAPSLOCK             &kp A             &kp S             &kp D         &kp F         &kp G   &none      &kp BACKSPACE  &kp LEFT_ALT      &kp LGUI   &kp RCTRL  &none                     &kp H   &kp J          &kp K          &kp L              &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
+&kp LSHFT                &kp DE_Y          &kp X             &kp C         &kp V         &kp B                             &kp HOME          &kp PG_UP                                       &kp N   &kp M          &kp COMMA      &kp DOT            &kp DE_MINUS     &kp RSHFT
+&mo 2                    &kp DE_LESS_THAN  &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT          &kp SPACE  &kp DEL        &kp END           &kp PG_DN  &kp ENTER  &new_behavior 0 DE_SPACE          &kp RIGHT_ALT  &kp RIGHT_WIN  &kp RIGHT_CONTROL  &kp DE_PLUS      &kp DE_HASH
             >;
         };
 
@@ -98,11 +110,11 @@
 
         mod {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                    &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader               &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5    &none  &gresc      &none       &none  &none  &none
+&none  &none         &none         &none         &macro_ver    &none                             &none      &none                                             &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &new_behavior 0 DE_SPACE         &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
     };
