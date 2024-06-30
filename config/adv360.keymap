@@ -45,35 +45,7 @@
     macros {
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        left-arrow {
-            bindings = <&kp LEFT_ARROW>;
-            key-positions = <41 70>;
-            layers = <3>;
-        };
-
-        right-arrow {
-            bindings = <&kp RIGHT>;
-            key-positions = <70 43>;
-        };
-
-        up-arrow {
-            bindings = <&kp UP_ARROW>;
-            key-positions = <70 24>;
-        };
-
-        dowm-arrow {
-            bindings = <&kp DOWN_ARROW>;
-            key-positions = <70 42>;
-        };
-
-        marks {
-            bindings = <&kp GRAVE>;
-            key-positions = <70 75>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
