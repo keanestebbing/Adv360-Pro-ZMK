@@ -39,6 +39,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LALT|MOD_RALT)>;
+            keep-mods = <(MOD_LALT|MOD_RALT)>;
         };
 
         altup: altup {
@@ -48,6 +49,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LALT|MOD_RALT)>;
+            keep-mods = <(MOD_LALT|MOD_RALT)>;
         };
 
         altleft: altleft {
@@ -57,6 +59,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LALT|MOD_RALT)>;
+            keep-mods = <(MOD_LALT|MOD_RALT)>;
         };
 
         altright: altright {
@@ -66,6 +69,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LALT|MOD_RALT)>;
+            keep-mods = <(MOD_LALT|MOD_RALT)>;
         };
     };
 
