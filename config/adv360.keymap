@@ -28,8 +28,6 @@
             quick_tap_ms = <175>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&sk>;
-
-            hold-trigger-key-positions = <30 31 32 41 42 43>;
         };
 
         altdown: altdown {
