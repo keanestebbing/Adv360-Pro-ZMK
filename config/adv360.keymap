@@ -28,6 +28,8 @@
             quick_tap_ms = <175>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&sk>;
+
+            retro-tap;
         };
 
         altdown: altdown {
