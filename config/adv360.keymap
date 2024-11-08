@@ -30,7 +30,6 @@
             bindings = <&kp>, <&sk>;
 
             retro-tap;
-            hold-trigger-key-positions = <29 30 31 32>;
         };
 
         altdown: altdown {
