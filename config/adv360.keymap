@@ -82,7 +82,7 @@
 &kp TAB       &kp Q               &kp W               &kp E           &kp R         &kp T   &none                                                                       &kp DE_GRAVE         &kp Y   &kp U          &altup         &kp O              &kp P            &kp DE_U_UMLAUT
 &kp CAPSLOCK  &hm LEFT_CONTROL A  &hm LEFT_COMMAND S  &hm LEFT_ALT D  &kp F         &kp G   &none               &kp BACKSPACE  &kp CLEAR      &kp RIGHT_ALT  &kp RCTRL  &none                &kp H   &altleft       &altdown       &altright          &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
 &kp LSHFT     &kp DE_Y            &kp X               &kp C           &kp V         &kp B                                      &kp HOME       &kp PG_UP                                      &kp N   &kp M          &kp COMMA      &kp DOT            &kp DE_MINUS     &kp RSHFT
-&mo 2         &kp DE_LT           &kp LEFT_CONTROL    &kp LEFT_WIN    &kp LEFT_ALT          &mt LEFT_ALT SPACE  &kp DEL        &kp END        &kp PG_DN      &kp ENTER  &mt RIGHT_ALT SPACE          &kp RIGHT_ALT  &kp RIGHT_WIN  &kp RIGHT_CONTROL  &kp DE_PLUS      &kp DE_HASH
+&mo 2         &kp DE_LESS_THAN    &kp LEFT_CONTROL    &kp LEFT_WIN    &kp LEFT_ALT          &mt LEFT_ALT SPACE  &kp DEL        &kp END        &kp PG_DN      &kp ENTER  &mt RIGHT_ALT SPACE          &kp RIGHT_ALT  &kp RIGHT_WIN  &kp RIGHT_CONTROL  &kp DE_PLUS      &kp DE_HASH
             >;
         };
 
