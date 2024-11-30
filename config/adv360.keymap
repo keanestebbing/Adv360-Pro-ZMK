@@ -34,7 +34,7 @@
         altdown: altdown {
             compatible = "zmk,behavior-mod-morph";
             label = "ALTDOWN";
-            bindings = <&kp DE_K>, <&kp DOWN_ARROW>;
+            bindings = <&hm RIGHT_ALT K>, <&kp DOWN_ARROW>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
@@ -52,7 +52,7 @@
         altleft: altleft {
             compatible = "zmk,behavior-mod-morph";
             label = "ALTLEFT";
-            bindings = <&kp J>, <&kp LEFT_ARROW>;
+            bindings = <&hm RIGHT_SHIFT J>, <&kp LEFT_ARROW>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
@@ -61,7 +61,7 @@
         altright: altright {
             compatible = "zmk,behavior-mod-morph";
             label = "ALTRIGHT";
-            bindings = <&kp L>, <&kp RIGHT_ARROW>;
+            bindings = <&hm RIGHT_GUI L>, <&kp RIGHT_ARROW>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
